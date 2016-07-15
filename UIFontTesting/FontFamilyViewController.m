@@ -20,7 +20,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"FontFamilies";
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"SystemFont" style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemAction)];
     
     [self.view addSubview:self.scrollview];
     [self addSubviews];

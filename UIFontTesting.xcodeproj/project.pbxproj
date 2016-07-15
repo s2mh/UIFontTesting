@@ -14,7 +14,6 @@
 		04E2F6811D0EAF2B00CC6F74 /* AscenderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2F67E1D0EAF2B00CC6F74 /* AscenderLabel.m */; };
 		04E2F6821D0EAF2B00CC6F74 /* XHeightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2F6801D0EAF2B00CC6F74 /* XHeightLabel.m */; };
 		6A971EAD1D127D0900FB527B /* FontFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A971EAC1D127D0900FB527B /* FontFamilyViewController.m */; };
-		6A9B97691D224ED700A63963 /* xxxxx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A9B97681D224EAF00A63963 /* xxxxx.ttf */; };
 		6A9B976E1D2282B000A63963 /* ZonedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B976D1D2282B000A63963 /* ZonedLabel.m */; };
 		6A9B97711D228ABF00A63963 /* CapHeightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B97701D228ABF00A63963 /* CapHeightLabel.m */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 		04E2F6801D0EAF2B00CC6F74 /* XHeightLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHeightLabel.m; sourceTree = "<group>"; };
 		6A971EAB1D127D0900FB527B /* FontFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontFamilyViewController.h; sourceTree = "<group>"; };
 		6A971EAC1D127D0900FB527B /* FontFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontFamilyViewController.m; sourceTree = "<group>"; };
-		6A9B97681D224EAF00A63963 /* xxxxx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = xxxxx.ttf; sourceTree = "<group>"; };
 		6A9B976C1D2282B000A63963 /* ZonedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZonedLabel.h; sourceTree = "<group>"; };
 		6A9B976D1D2282B000A63963 /* ZonedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZonedLabel.m; sourceTree = "<group>"; };
 		6A9B976F1D228ABF00A63963 /* CapHeightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapHeightLabel.h; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				6A971EAC1D127D0900FB527B /* FontFamilyViewController.m */,
 				04E2F6721D0EAEFD00CC6F74 /* Assets.xcassets */,
 				04E2F6771D0EAEFD00CC6F74 /* Info.plist */,
-				6A9B97681D224EAF00A63963 /* xxxxx.ttf */,
 				04E2F6661D0EAEFD00CC6F74 /* Supporting Files */,
 			);
 			path = UIFontTesting;
@@ -166,7 +163,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A9B97691D224ED700A63963 /* xxxxx.ttf in Resources */,
 				04E2F6731D0EAEFD00CC6F74 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
