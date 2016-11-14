@@ -39,12 +39,12 @@
     CGFloat w = 300.0f;
     
     [[UIFont familyNames] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        UIFont *font = [UIFont fontWithName:obj size:15.0f];
+        UIFont *font = [UIFont fontWithName:obj size:10.0f];
         CGFloat h = font.lineHeight + font.leading;
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, w, h)];
         label.font = font;
         label.backgroundColor = [UIColor grayColor];
-        label.text = [NSString stringWithFormat:@"字体%@ %f %f", obj, font.lineHeight, font.leading];
+        label.text = [NSString stringWithFormat:@"汉字字体%@ %f %f", obj, font.lineHeight, font.leading];
         [self.scrollview addSubview:label];
         y += h + 5.0f;
         self.scrollview.contentSize = CGSizeMake(self.scrollview.contentSize.width, y);

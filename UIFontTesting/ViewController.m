@@ -55,10 +55,10 @@
     [string appendString:[NSString stringWithFormat:@"descender  = %10f      %10f\n", f.descender,  f2.descender]];
     [string appendString:[NSString stringWithFormat:@"capHeight  = %10f      %10f\n", f.capHeight,  f2.capHeight]];
     [string appendString:[NSString stringWithFormat:@"xHeight    = %10f      %10f\n", f.xHeight,    f2.xHeight]];
-    [string appendString:[NSString stringWithFormat:@"***************************************\n"]];
-    [string appendString:[NSString stringWithFormat:@"ascender - descender\n"]];
-    [string appendString:[NSString stringWithFormat:@"           = %10f      %10f\n", (f.ascender - f.descender),  (f2.ascender - f2.descender)]];
     [string appendString:[NSString stringWithFormat:@"lineHeight = %10f      %10f\n", f.lineHeight, f2.lineHeight]];
+    [string appendString:[NSString stringWithFormat:@"***************************************\n"]];
+    [string appendString:[NSString stringWithFormat:@"ascender - descender == lineHeight\n"]];
+    [string appendString:[NSString stringWithFormat:@"             %10f      %10f\n", (f.ascender - f.descender),  (f2.ascender - f2.descender)]];
     [string appendString:[NSString stringWithFormat:@"***************************************\n"]];
     [string appendString:[NSString stringWithFormat:@"leading    = %10f      %10f\n", f.leading,    f2.leading]];
     
@@ -73,7 +73,7 @@
     CGFloat h = CGRectGetMaxY(label.frame) - interval;
     CGFloat w = 300.0f;
     
-    NSString *testString = @"ABFGIabfgi 字体 ∑å∆˚∫";
+    NSString *testString = @"ABFGIabfgi 字 ∑å∆˚∫";
     
     ZonedLabel *zonedLabel = [[ZonedLabel alloc] init];
     zonedLabel.font = f2;
@@ -82,18 +82,18 @@
     
     CapHeightLabel *capHeightLabel = [[CapHeightLabel alloc] init];
     capHeightLabel.font = f2;
-    capHeightLabel.text = [NSString stringWithFormat:@"capHeight:%@", testString];
+    capHeightLabel.text = [NSString stringWithFormat:@"capHeight: %@", @"大写字母的高度"];
     capHeightLabel.frame = CGRectMake(10.0f, (h += interval), w, f2.lineHeight);
     
     XHeightLabel *xHeightLabel = [[XHeightLabel alloc] init];
     xHeightLabel.backgroundColor = [UIColor grayColor];
     xHeightLabel.font = f2;
-    xHeightLabel.text = [NSString stringWithFormat:@"xHeight:%@", testString];
+    xHeightLabel.text = [NSString stringWithFormat:@"xHeight: %@", @"'x'即小写字母的高度"];
     xHeightLabel.frame = CGRectMake(10.0f, (h += interval), w, f2.lineHeight);
     
     AscenderLabel *ascenderLabel = [[AscenderLabel alloc] init];
     ascenderLabel.font = f2;
-    ascenderLabel.text = [NSString stringWithFormat:@"ascender:%@", testString];
+    ascenderLabel.text = [NSString stringWithFormat:@"ascender: %@", testString];
     ascenderLabel.frame = CGRectMake(10.0f, (h += interval), w, f2.lineHeight);
     
     UILabel *chineseLabel = [[UILabel alloc] init];
