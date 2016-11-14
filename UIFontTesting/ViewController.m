@@ -29,7 +29,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.navigationItem.title = @"SystemFont";
+    self.navigationItem.title = @"UIFont";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"FontFamilies" style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemAction)];
     
     [self.view addSubview:self.scrollview];
